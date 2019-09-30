@@ -42,14 +42,14 @@
 			$host = $this->videoHost($videoUrl);
 			switch($host) {
 				case VIMEO:
-					if(preg_match('/\/([0-9]+)\/*(\?.*)?$/',$videoUrl,$matches) !== false) {
+					if(preg_match('/\/([0-9]+)\/*(\??.*)?$/',$videoUrl,$matches) != false) {
 						return $matches[1];
 					}
 				break;
 
 				case YOUTUBE:
 				case YOUTUBE_SHORT:
-					if(preg_match('%(?:youtube(?:-nocookie)?\.com/(?:[^/]+/.+/|(?:v|e(?:mbed)?)/|.*[?&]v=)|youtu\.be/)([^"&?/ ]{11})%i',$videoUrl,$matches) !== false)
+					if(preg_match('%(?:youtube(?:-nocookie)?\.com/(?:[^/]+/.+/|(?:v|e(?:mbed)?)/|.*[?&]v=)|youtu\.be/)([^"&?/ ]{11})%i',$videoUrl,$matches) != false)
 						return $matches[1];
 				break;
 			}

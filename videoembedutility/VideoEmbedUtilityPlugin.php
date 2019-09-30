@@ -14,7 +14,7 @@
 		}
 
 		public function getVersion() {
-			return '1.0.0';
+			return '1.0.1';
 		}
 
 		function getDeveloper() {
@@ -22,7 +22,7 @@
 		}
 
 		function getDeveloperUrl() {
-			return 'http://staplegun.us';
+			return 'https://github.com/rjhallsted/craft-video-embed-utility';
 		}
 
 	}
